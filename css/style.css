@@ -1,0 +1,68 @@
+.container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.game {
+    display: none;
+}
+
+
+.gameArea {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 75%;
+    margin: 5rem auto;
+    justify-items: center;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+
+
+.vs {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero {
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.villain {
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+
+.buttonFight {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+#fight {
+    background-color: rgb(107, 38, 50);
+    color: wheat;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.result {
+    display: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+#winner {
+    display: block;
+    font-size: 3rem;
+}
